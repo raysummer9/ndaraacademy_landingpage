@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center px-6 py-16 sm:py-20 pt-24 sm:pt-32 bg-[#fffff0]">
+    <section className="min-h-[80vh] sm:min-h-screen flex items-center px-6 pt-20 sm:pt-32 pb-0 sm:pb-0 bg-[#fffff0]">
       <div className="max-w-7xl mx-auto pr-0 sm:pr-16 lg:pr-32">
         {/* Main Heading */}
         <h1 
@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start animate-fade-in-up animation-delay-400">
           <Link 
             href="/community"
-            className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-[#D7FF94] text-gray-900 font-semibold rounded-lg hover:bg-[#c4f085] transition-all duration-300 group hover:scale-105 hover:shadow-lg"
+            className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-[#D7FF94] text-gray-900 font-semibold rounded-lg hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg"
           >
             Join Community
             <svg 
@@ -38,7 +38,7 @@ const HeroSection = () => {
           
           <Link 
             href="/programs"
-            className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-transparent text-gray-900 font-semibold border-2 border-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-300 group hover:scale-105 hover:shadow-lg"
+            className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-transparent text-gray-900 font-semibold border-2 border-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-300 group hover:shadow-lg"
           >
             Explore Programs
             <svg 
