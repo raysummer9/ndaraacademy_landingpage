@@ -2,8 +2,8 @@ import React from 'react';
 
 const MissionSection = () => {
   return (
-    <section className="py-3 sm:py-12 bg-[#fffff0]">
-      <div className="max-w-6xl mx-auto px-3 sm:px-6">
+    <section className="py-3 sm:py-12 bg-[#fffff0] relative overflow-visible">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
           {/* Left Column - Image (60% width) */}
           <div className="order-1 lg:order-1 lg:col-span-7 flex items-stretch animate-fade-in-up animation-delay-200">
@@ -36,11 +36,11 @@ const MissionSection = () => {
               </a>
 
               {/* Decorative Element - Bottom Right */}
-              <div className="absolute bottom-0 right-0 opacity-20 animate-fade-in-up animation-delay-1000">
+              <div className="absolute -bottom-80 -right-60 animate-fade-in-up animation-delay-1000">
                 <img
-                  src="/assets/mission-backdrop.svg"
+                  src="/assets/ellipse3.svg"
                   alt="Mission backdrop decoration"
-                  className="w-25 h-25"
+                  className="w-[820px] h-[820px] opacity-100"
                 />
               </div>
             </div>
