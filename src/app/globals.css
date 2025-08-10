@@ -17,7 +17,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: var(--font-poppins);
+  font-family: var(--font-raleway);
   background-color: #fffff0;
 }
 

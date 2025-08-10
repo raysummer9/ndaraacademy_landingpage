@@ -2,7 +2,7 @@ import React from 'react';
 
 const MissionSection = () => {
   return (
-    <section className="py-3 sm:py-12 bg-[#fffff0] relative overflow-visible">
+    <section className="pt-0 pb-3 sm:py-12 bg-[#fffff0] relative overflow-visible">
       <div className="max-w-6xl mx-auto px-3 sm:px-6 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
           {/* Left Column - Image (60% width) */}
@@ -20,7 +20,9 @@ const MissionSection = () => {
           <div className="order-2 lg:order-2 lg:col-span-5 flex items-stretch animate-fade-in-up animation-delay-400">
             <div className="bg-[#D7FF94] rounded-2xl p-8 lg:p-10 relative w-full flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
               {/* Mission Text */}
-              <p className="text-xl lg:text-4xl text-gray-900 leading-relaxed animate-fade-in-up animation-delay-600">
+              <p className="text-gray-900 animate-fade-in-up animation-delay-600 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[43px] leading-tight sm:leading-tight lg:leading-[52px] font-['Raleway'] font-medium" style={{
+                letterSpacing: '0%'
+              }}>
                 Our mission is to create programs, digital tools, and community spaces that help young people grow — in design, in self-belief, and in purpose.
               </p>
               
@@ -36,11 +38,11 @@ const MissionSection = () => {
               </a>
 
               {/* Decorative Element - Bottom Right */}
-              <div className="absolute -bottom-80 -right-60 animate-fade-in-up animation-delay-1000">
+              <div className="absolute bottom-0 right-0 animate-fade-in-up animation-delay-1000">
                 <img
-                  src="/assets/ellipse3.svg"
+                  src="/assets/mission-backdrop.svg"
                   alt="Mission backdrop decoration"
-                  className="w-[820px] h-[820px] opacity-100"
+                  className="w-25 h-25"
                 />
               </div>
             </div>

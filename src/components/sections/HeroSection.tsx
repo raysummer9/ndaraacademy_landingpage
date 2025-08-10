@@ -4,18 +4,22 @@ import Link from 'next/link'
 
 const HeroSection = () => {
   return (
-    <section className="min-h-[80vh] sm:min-h-screen flex items-center px-6 pt-20 sm:pt-32 pb-0 sm:pb-0 bg-[#fffff0]">
-      <div className="max-w-7xl mx-auto pr-0 sm:pr-16 lg:pr-32">
+    <section className="min-h-[80vh] sm:min-h-screen flex items-center px-4 sm:px-6 pt-20 sm:pt-32 pb-6 sm:pb-0 bg-[#fffff0]">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-12">
         {/* Main Heading */}
         <h1 
-          className="text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 sm:mb-8 max-w-4xl text-center sm:text-left animate-fade-in-up"
-          style={{ lineHeight: '1.1' }}
+          className="text-gray-900 mb-6 sm:mb-8 max-w-full sm:max-w-6xl text-left animate-fade-in-up text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[60px] leading-tight sm:leading-tight lg:leading-[74px] font-['Raleway'] font-semibold"
+          style={{ 
+            letterSpacing: '0%'
+          }}
         >
           We help young creatives grow by turning imagination into purpose, confidence, and skill
         </h1>
         
         {/* Description Paragraph */}
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading mb-8 sm:mb-12 max-w-3xl animate-fade-in-up animation-delay-200">
+        <p className="text-gray-600 mb-8 sm:mb-12 max-w-full sm:max-w-5xl animate-fade-in-up animation-delay-200 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[30px] leading-relaxed sm:leading-relaxed lg:leading-[40px] font-['Raleway'] font-medium" style={{
+          letterSpacing: '0%'
+        }}>
           Ndara is a global creative hub built for the next generation of designers, storytellers, and digital innovators—those ready to grow, explore their voice, and create work that truly matters
         </p>
         

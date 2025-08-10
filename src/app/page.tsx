@@ -7,8 +7,20 @@ import CTASection from '@/components/sections/CTASection';
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <HeroSection />
+
+      {/* Decorative Element - Between Mission and Pillars */}
+      <div className="relative">
+        <div className="absolute -top-70 -right-60 z-0">
+          <img
+            src="/assets/ellipse3.svg"
+            alt="Backdrop decoration"
+            className="w-[1200px] h-[1200px] opacity-100"
+          />
+        </div>
+      </div>
+
       <MissionSection />
       <PillarsSection />
       <WhyNdaraSection />
