@@ -164,52 +164,63 @@ export default function TestimonialSection() {
       </div>
 
       {/* Process Section */}
-      <div className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          {/* Process Label */}
-          <div className={`inline-flex items-center gap-3 bg-black text-white px-6 py-3 rounded-full mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="w-3 h-3 bg-lime-400 rounded-full"></div>
-            <span className="text-sm font-semibold tracking-wide">PROCESS</span>
-          </div>
+      <div className="py-12 sm:py-16 lg:py-20 -mt-16 sm:-mt-20 lg:-mt-28">
+        <div className="w-full px-4 sm:px-8 lg:px-16 xl:px-24">
+          <div className="max-w-7xl mx-auto bg-white py-12 sm:py-16 lg:py-20 px-6 sm:px-8 lg:px-12">
+          {/* Top Section - Two Column Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 mb-12 sm:mb-16">
+            {/* Left Column - Process Label */}
+            <div className={`lg:col-span-3 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className="inline-flex items-center gap-2 sm:gap-3 bg-black text-[#D7FF94] px-4 sm:px-6 py-2 sm:py-3 rounded-full">
+                <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 bg-[#D7FF94] rounded-full"></div>
+                <span className="text-xs sm:text-sm font-semibold tracking-wide">PROCESS</span>
+              </div>
+            </div>
 
-          {/* Main Heading */}
-          <div className={`mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-black leading-tight max-w-6xl">
-              Creative growth doesn't start with{' '}
-              <span className="underline decoration-blue-500 decoration-4">software.</span>{' '}
-              It starts with{' '}
-              <span className="underline decoration-blue-500 decoration-4">you – your ideas,</span>{' '}
-              <span className="underline decoration-blue-500 decoration-4">your roots,</span>{' '}
-              <span className="underline decoration-blue-500 decoration-4">your rhythm.</span>
-            </h2>
-          </div>
+            {/* Right Column - Heading and Text */}
+            <div className="lg:col-span-9">
+              {/* Main Heading */}
+              <div className={`mb-6 sm:mb-8 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <h2 className="text-black text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-semibold leading-tight sm:leading-tight lg:leading-tight xl:leading-[62px] max-w-5xl font-['Raleway']" style={{
+                  letterSpacing: '0%'
+                }}>
+                  Creative growth doesn't start with software.
+                  It starts with you — your ideas, your roots, your rhythm.
+                </h2>
+              </div>
 
-          {/* Supporting Text */}
-          <div className={`mb-16 transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              <p className="text-lg text-gray-800 leading-relaxed">
-                We're not just building a platform — we're building with you. Our process is rooted in listening, guiding, and creating what truly matters, together.
-              </p>
-              <p className="text-lg text-gray-800 leading-relaxed">
-                At Ndara, we build creative learning experiences, tools, and spaces that put you at the center. Whether it's storytelling, design, or purpose-driven projects, we're here to help you grow your skills, own your voice, and create work that truly reflects who you are. Every idea we shape starts with understanding, grows with intention, and leads to real impact.
-              </p>
+              {/* Supporting Text */}
+              <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+                <div className="space-y-4 sm:space-y-6">
+                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                    <b>We're not just building a platform — we're building with you. Our process is rooted in listening, guiding, and creating what truly matters, together.</b>
+                  </p>
+                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                    At Ndara, we build creative learning experiences, tools, and spaces that put you at the center. Whether it's storytelling, design, or purpose-driven projects, we're here to help you grow your skills, own your voice, and create work that truly reflects who you are. Every idea we shape starts with understanding, grows with intention, and leads to real impact.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Process Cards */}
-          <div className={`grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {processSteps.map((step, index) => (
-              <div key={step.id} className="group">
-                <div className="mb-6">
-                  <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <span className="text-white text-xl font-bold">{step.number}</span>
+              <div 
+                key={step.id} 
+                className={`group transition-all duration-1000 delay-${600 + (index * 100)} ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+              >
+                <div className="mb-4 sm:mb-6">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-black rounded-full flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-[#D7FF94] text-lg sm:text-xl font-bold">{step.number}</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-black mb-4">{step.title}</h3>
-                  <p className="text-gray-700 leading-relaxed">{step.description}</p>
+                  <h3 className="text-xl sm:text-2xl font-bold text-black mb-3 sm:mb-4">{step.title}</h3>
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{step.description}</p>
                 </div>
               </div>
             ))}
           </div>
+        </div>
         </div>
       </div>
     </section>

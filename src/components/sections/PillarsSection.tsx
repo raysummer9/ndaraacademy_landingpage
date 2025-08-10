@@ -71,9 +71,9 @@ export default function PillarsSection() {
         {/* Header Section */}
         <div className="text-left mb-12 sm:mb-16 pl-0 md:pl-6 lg:pl-12 xl:pl-20 pr-0 md:pr-6 lg:pr-16 xl:pr-40">
           {/* Pillars Label */}
-          <div className={`inline-flex items-center gap-2 bg-black text-white px-4 py-2 rounded-full mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <div className="w-2 h-2 bg-lime-400 rounded-full"></div>
-            <span className="text-sm font-medium">OUR PILLARS</span>
+          <div className={`inline-flex items-center gap-2 bg-black text-[#D7FF94] px-4 py-2 rounded-full mb-6 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            <div className="w-2 h-2 bg-[#D7FF94] rounded-full"></div>
+            <span className="text-xs sm:text-sm font-semibold tracking-wide">OUR PILLARS</span>
           </div>
           
           {/* Main Heading */}
