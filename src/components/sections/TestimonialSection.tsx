@@ -192,7 +192,13 @@ export default function TestimonialSection() {
               {/* Supporting Text */}
               <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 <div className="space-y-4 sm:space-y-6">
-                  <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
+                  <p className="text-black" style={{
+                    fontFamily: 'Raleway',
+                    fontWeight: 600,
+                    fontSize: '20px',
+                    lineHeight: '30px',
+                    letterSpacing: '0%'
+                  }}>
                     <b>We're not just building a platform — we're building with you. Our process is rooted in listening, guiding, and creating what truly matters, together.</b>
                   </p>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed">

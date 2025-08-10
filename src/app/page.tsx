@@ -3,6 +3,7 @@ import MissionSection from '@/components/sections/MissionSection'
 import PillarsSection from '@/components/sections/PillarsSection'
 import WhyNdaraSection from '@/components/sections/WhyNdaraSection';
 import TestimonialsSection from '@/components/sections/TestimonialSection';
+import CTASection from '@/components/sections/CTASection';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <PillarsSection />
       <WhyNdaraSection />
       <TestimonialsSection />
+      <CTASection />
     </main>
   );
 }
