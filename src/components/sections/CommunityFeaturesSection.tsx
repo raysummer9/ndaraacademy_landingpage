@@ -108,7 +108,7 @@ export default function CommunityFeaturesSection() {
       <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-[#D7FF94] to-transparent"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 justify-items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 lg:gap-6 justify-items-center">
           {/* First 4 cards */}
           {featureBlocks.slice(0, 4).map((block, index) => (
             <div
