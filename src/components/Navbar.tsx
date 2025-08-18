@@ -19,8 +19,8 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img 
-            src="/assets/ndara-logo.png" 
-            alt="NDARA Studios Logo" 
+            src="/assets/ndara-logo-green.png" 
+            alt="NDARA Academy Logo" 
             className="h-16 w-auto"
           />
         </Link>
@@ -48,8 +48,11 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <button 
-            className="hidden md:block font-medium text-gray-900 transition-colors duration-200"
+          <a 
+            href="https://learn.ndaraacademy.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:block font-medium text-black transition-colors duration-200"
             style={{
               fontFamily: 'Raleway',
               fontWeight: 500,
@@ -62,11 +65,15 @@ const Navbar = () => {
               padding: '10px 16px',
               borderRadius: '8px',
               borderLeft: '1px solid #D7FF94',
-              whiteSpace: 'nowrap'
+              whiteSpace: 'nowrap',
+              textDecoration: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
             }}
           >
-            Join the Wait List
-          </button>
+            Log in | Get Started
+          </a>
 
           {/* Mobile Menu Button */}
           <button
