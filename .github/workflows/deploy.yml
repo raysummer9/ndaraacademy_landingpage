@@ -25,6 +25,13 @@ jobs:
     - name: Build static site
       run: npm run build
       
+    - name: Clean and prepare for deployment
+      run: |
+        # Remove any existing .DS_Store files
+        find ./out -name ".DS_Store" -delete
+        # Ensure proper permissions
+        chmod -R 755 ./out/
+        
     - name: Deploy to Hostinger via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
@@ -38,3 +45,4 @@ jobs:
           **/.git*/**
           **/node_modules/**
           **/.DS_Store
+        log-level: verbose
