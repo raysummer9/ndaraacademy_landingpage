@@ -19,7 +19,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img 
-            src="/assets/ndara-logo-green.png" 
+            src="/assets/ndara-logo-black.png" 
             alt="NDARA Academy Logo" 
             className="h-16 w-auto"
           />
@@ -49,7 +49,7 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <a 
-            href="https://learn.ndaraacademy.com"
+            href="https://learn.ndaraacademy.com/login/"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block font-medium text-black transition-colors duration-200"
@@ -72,7 +72,7 @@ const Navbar = () => {
               justifyContent: 'center'
             }}
           >
-            Log in | Get Started
+            Get Started
           </a>
 
           {/* Mobile Menu Button */}
