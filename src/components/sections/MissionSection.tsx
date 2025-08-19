@@ -23,12 +23,12 @@ const MissionSection = () => {
               <p className="text-gray-900 animate-fade-in-up animation-delay-600 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[43px] leading-tight sm:leading-tight lg:leading-[52px] font-['Raleway'] font-medium" style={{
                 letterSpacing: '0%'
               }}>
-                Our mission is to create programs, digital tools, and community spaces that help young people grow — in design, in self-belief, and in purpose.
+                Our mission is to create programs, digital tools, and community spaces that help young people grow in design, in self-belief, and in purpose.
               </p>
               
               {/* CTA Link */}
               <a 
-                href="#community" 
+                href="/community" 
                 className="inline-flex items-center text-base lg:text-lg font-semibold text-gray-900 hover:text-gray-700 transition-all duration-300 group mt-12 mb-8 animate-fade-in-up animation-delay-800 hover:translate-x-2"
               >
                 Join Community

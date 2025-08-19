@@ -37,13 +37,13 @@ const processSteps = [
     id: 2,
     number: "002", 
     title: "We Shape Together",
-    description: "We help make sense of your ideas — with the tools, guidance, and creative space to shape something real, meaningful, and true to you and your community."
+    description: "We help make sense of your ideas with the tools, guidance, and creative space to shape something real, meaningful, and true to you and your community."
   },
   {
     id: 3,
     number: "003",
     title: "We Grow as One",
-    description: "We don't disappear after the first step. Through mentorship, learning, and community, we keep building alongside you — because your growth is part of our story too."
+    description: "We don't disappear after the first step. Through mentorship, learning, and community, we keep building alongside you, because your growth is part of our story too."
   }
 ];
 
@@ -185,7 +185,7 @@ export default function TestimonialSection() {
                   letterSpacing: '0%'
                 }}>
                   Creative growth doesn't start with software.
-                  It starts with you — your ideas, your roots, your rhythm.
+                  It starts with you, your ideas, your roots, your rhythm.
                 </h2>
               </div>
 
@@ -199,7 +199,7 @@ export default function TestimonialSection() {
                     lineHeight: '30px',
                     letterSpacing: '0%'
                   }}>
-                    <b>We're not just building a platform — we're building with you. Our process is rooted in listening, guiding, and creating what truly matters, together.</b>
+                    <b>We're not just building a platform, we're building with you. Our process is rooted in listening, guiding, and creating what truly matters, together.</b>
                   </p>
                   <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                     At Ndara, we build creative learning experiences, tools, and spaces that put you at the center. Whether it's storytelling, design, or purpose-driven projects, we're here to help you grow your skills, own your voice, and create work that truly reflects who you are. Every idea we shape starts with understanding, grows with intention, and leads to real impact.

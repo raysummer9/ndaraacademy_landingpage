@@ -20,7 +20,7 @@ const HeroSection = () => {
         <p className="text-gray-600 mb-8 sm:mb-12 max-w-full sm:max-w-5xl animate-fade-in-up animation-delay-200 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-[30px] leading-relaxed sm:leading-relaxed lg:leading-[40px] font-['Raleway'] font-medium" style={{
           letterSpacing: '0%'
         }}>
-          Ndara is a global creative hub built for the next generation of designers, storytellers, and digital innovators—those ready to grow, explore their voice, and create work that truly matters
+          Ndara is a global creative hub built for the next generation of designers, storytellers, and digital innovators, those ready to grow, explore their voice, and create work that truly matters
         </p>
         
         {/* CTA Buttons */}
@@ -41,7 +41,7 @@ const HeroSection = () => {
           </Link>
           
           <Link 
-            href="/programs"
+            href="https://learn.ndaraacademy.com/"
             className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-transparent text-gray-900 font-semibold border-2 border-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-300 group hover:shadow-lg"
           >
             Explore Programs

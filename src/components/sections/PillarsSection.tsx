@@ -79,15 +79,19 @@ export default function PillarsSection() {
           {/* Main Heading */}
           <div className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-semibold text-black max-w-5xl leading-tight sm:leading-[62px] mb-6 sm:mb-8 font-['Raleway']">
-              Digital creativity isn't one-size-fits-all
-              — we explore it through four bold
+              Digital creativity isn't one-size-fits-all. We explore it through four bold
               pillars.
             </h2>
           </div>
           
           {/* CTA Button */}
           <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <button className="inline-flex items-center gap-3 bg-[#D7FF94] text-black px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg">
+            <a 
+              href="https://learn.ndaraacademy.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-[#D7FF94] text-black px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg"
+            >
               All Projects
               <svg 
                 className="w-4 sm:w-5 h-4 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-200" 
@@ -102,7 +106,7 @@ export default function PillarsSection() {
                   d="M17 8l4 4m0 0l-4 4m4-4H3" 
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -132,7 +136,12 @@ export default function PillarsSection() {
                         <h3 className="text-xl font-bold text-white">{pillar.title}</h3>
                         
                         {/* Circular Action Button */}
-                        <button className="w-10 h-10 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors duration-300">
+                        <a 
+                          href="https://learn.ndaraacademy.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-10 h-10 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors duration-300"
+                        >
                           <svg 
                             className="w-4 h-4 text-white" 
                             fill="none" 
@@ -146,7 +155,7 @@ export default function PillarsSection() {
                               d="M17 8l4 4m0 0l-4 4m4-4H3" 
                             />
                           </svg>
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -188,7 +197,12 @@ export default function PillarsSection() {
                       <h3 className="text-xl sm:text-2xl font-bold text-white">{pillar.title}</h3>
                       
                       {/* Circular Action Button */}
-                      <button className="w-10 h-10 sm:w-12 sm:h-12 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors duration-300">
+                      <a 
+                        href="https://learn.ndaraacademy.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 sm:w-12 sm:h-12 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors duration-300"
+                      >
                         <svg 
                           className="w-4 sm:w-5 h-4 sm:h-5 text-white" 
                           fill="none" 
@@ -202,7 +216,7 @@ export default function PillarsSection() {
                             d="M17 8l4 4m0 0l-4 4m4-4H3" 
                           />
                         </svg>
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
