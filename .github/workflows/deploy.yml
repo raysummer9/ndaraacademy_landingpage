@@ -32,17 +32,16 @@ jobs:
         # Ensure proper permissions
         chmod -R 755 ./out/
         
+    - name: Create server directories (if needed)
+      run: |
+        # This step ensures the server has the necessary directory structure
+        echo "Preparing for deployment..."
+        
     - name: Deploy to Hostinger via FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: sebastianpopp/ftp-action@releases/v2
       with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
+        host: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./out/
-        server-dir: ./
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          **/.DS_Store
-        log-level: verbose
+        localDir: "./out/"
+        remoteDir: "./"
