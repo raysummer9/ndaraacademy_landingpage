@@ -48,32 +48,34 @@ const Navbar = () => {
           </div>
 
           {/* CTA Button - Desktop Only */}
-          <a 
-            href="https://learn.ndaraacademy.com/login/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden lg:block font-medium text-black transition-colors duration-200"
-            style={{
-              fontFamily: 'Raleway',
-              fontWeight: 500,
-              fontSize: '16px',
-              lineHeight: '100%',
-              letterSpacing: '0%',
-              background: '#D7FF94',
-              width: '191px',
-              height: '39px',
-              padding: '10px 16px',
-              borderRadius: '8px',
-              borderLeft: '1px solid #D7FF94',
-              whiteSpace: 'nowrap',
-              textDecoration: 'none',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}
-          >
-            Join our Community
-          </a>
+          <div className="hidden xl:block">
+            <a 
+              href="https://learn.ndaraacademy.com/login/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-black transition-colors duration-200"
+              style={{
+                fontFamily: 'Raleway',
+                fontWeight: 500,
+                fontSize: '16px',
+                lineHeight: '100%',
+                letterSpacing: '0%',
+                background: '#D7FF94',
+                width: '191px',
+                height: '39px',
+                padding: '10px 16px',
+                borderRadius: '8px',
+                borderLeft: '1px solid #D7FF94',
+                whiteSpace: 'nowrap',
+                textDecoration: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              Join our Community
+            </a>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
