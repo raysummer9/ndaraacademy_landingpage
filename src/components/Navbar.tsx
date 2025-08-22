@@ -47,12 +47,12 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Button - Desktop Only */}
           <a 
             href="https://learn.ndaraacademy.com/login/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:block font-medium text-black transition-colors duration-200"
+            className="hidden lg:block font-medium text-black transition-colors duration-200"
             style={{
               fontFamily: 'Raleway',
               fontWeight: 500,
@@ -72,7 +72,7 @@ const Navbar = () => {
               justifyContent: 'center'
             }}
           >
-            Get Started
+            Join our Community
           </a>
 
           {/* Mobile Menu Button */}
@@ -103,6 +103,7 @@ const Navbar = () => {
               )}
             </svg>
           </button>
+
         </div>
       </div>
 
@@ -110,7 +111,7 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 right-0 bg-[#fffff0] border-t border-gray-200">
           <div className="px-6 py-4 space-y-4">
-            {navigationLinks.map((link) => (
+                        {navigationLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
@@ -144,7 +145,7 @@ const Navbar = () => {
                 whiteSpace: 'nowrap'
               }}
             >
-              Join the Wait List
+              Join our Community
             </button>
           </div>
         </div>
