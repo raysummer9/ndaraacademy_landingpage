@@ -52,12 +52,12 @@ export default function CTASection() {
           {/* Action Buttons */}
           <div className={`flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <a 
-              href="https://learn.ndaraacademy.com"
+              href="/community"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#D7FF94] text-black px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#c4f085] transition-all duration-300 hover:shadow-lg inline-flex items-center justify-center"
             >
-              Join as a Creative Learner
+              Join the Community
             </a>
             <a 
               href="/contact"

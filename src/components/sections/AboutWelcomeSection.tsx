@@ -61,7 +61,7 @@ export default function AboutWelcomeSection() {
         {/* Call-to-Action Buttons */}
         <div className={`flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <button className="bg-[#D7FF94] text-black px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#c4f085] transition-all duration-300 hover:shadow-lg">
-            View our Projects
+            Explore our Programmes
           </button>
           <button className="bg-transparent text-black border-2 border-black px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-semibold hover:bg-black hover:text-white transition-all duration-300 hover:shadow-lg">
             What we offer
