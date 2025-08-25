@@ -32,7 +32,7 @@ const CommunityTestimonialSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 sm:py-20 lg:py-24 bg-transparent">
+    <section id="what-we-offer" ref={sectionRef} className="py-16 sm:py-20 lg:py-24 bg-transparent">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center text-center lg:text-left">
           {/* Left Panel - Main Image */}

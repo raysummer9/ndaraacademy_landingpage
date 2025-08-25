@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function CollaborationCTASection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -59,7 +60,7 @@ export default function CollaborationCTASection() {
 
         {/* Call-to-Action Button */}
         <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <button className="inline-flex items-center justify-center px-8 sm:px-10 lg:px-12 py-4 sm:py-5 bg-[#D7FF94] text-black font-semibold rounded-lg hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg">
+          <Link href="/contact" className="inline-flex items-center justify-center px-8 sm:px-10 lg:px-12 py-4 sm:py-5 bg-[#D7FF94] text-black font-semibold rounded-lg hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg">
             Get in Touch
             <svg 
               className="ml-3 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200" 
@@ -69,7 +70,7 @@ export default function CollaborationCTASection() {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

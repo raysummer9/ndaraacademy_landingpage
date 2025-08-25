@@ -28,7 +28,7 @@ const HeroSection = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start animate-fade-in-up animation-delay-400">
             <Link 
-              href="https://learn.ndaraacademy.com/"
+              href="/coming-soon"
               className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-[#D7FF94] text-gray-900 font-semibold rounded-lg hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg"
             >
               Explore Programs

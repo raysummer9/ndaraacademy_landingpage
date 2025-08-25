@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function CollaborationHeadingSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -61,7 +62,7 @@ export default function CollaborationHeadingSection() {
 
             {/* Call-to-Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 transition-all duration-1000 delay-600">
-              <button className="inline-flex items-center justify-center px-8 sm:px-10 py-3 sm:py-4 bg-[#D7FF94] text-black font-semibold rounded-lg hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 sm:px-10 py-3 sm:py-4 bg-[#D7FF94] text-black font-semibold rounded-lg hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg">
                 Become a Partner
                 <svg 
                   className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200" 
@@ -71,9 +72,9 @@ export default function CollaborationHeadingSection() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </button>
+              </Link>
               
-              <button className="inline-flex items-center justify-center px-8 sm:px-10 py-3 sm:py-4 bg-transparent text-black border-2 border-black font-semibold rounded-lg hover:bg-black hover:text-white transition-all duration-300 group hover:shadow-lg">
+              <Link href="/coming-soon" className="inline-flex items-center justify-center px-8 sm:px-10 py-3 sm:py-4 bg-transparent text-black border-2 border-black font-semibold rounded-lg hover:bg-black hover:text-white transition-all duration-300 group hover:shadow-lg">
                 Download Deck
                 <svg 
                   className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200" 
@@ -83,7 +84,7 @@ export default function CollaborationHeadingSection() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-              </button>
+              </Link>
             </div>
           </div>
 

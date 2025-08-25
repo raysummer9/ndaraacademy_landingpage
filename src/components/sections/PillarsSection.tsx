@@ -87,7 +87,7 @@ export default function PillarsSection() {
           {/* CTA Button */}
           <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <a 
-              href="https://learn.ndaraacademy.com"
+              href="/coming-soon"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-[#D7FF94] text-black px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg"
@@ -136,7 +136,7 @@ export default function PillarsSection() {
                       
                       {/* Circular Action Button */}
                       <a 
-                        href="https://learn.ndaraacademy.com"
+                        href="/coming-soon"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-10 h-10 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors duration-300"
@@ -186,7 +186,7 @@ export default function PillarsSection() {
                       
                       {/* Circular Action Button */}
                       <a 
-                        href="https://learn.ndaraacademy.com"
+                        href="/coming-soon"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-10 h-10 sm:w-12 sm:h-12 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors duration-300"

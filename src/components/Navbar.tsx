@@ -50,7 +50,7 @@ const Navbar = () => {
           {/* CTA Button - Desktop Only */}
           <div className="hidden xl:block">
             <a 
-              href="https://learn.ndaraacademy.com/login/"
+              href="/coming-soon"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-black transition-colors duration-200"
