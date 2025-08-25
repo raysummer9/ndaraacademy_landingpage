@@ -19,9 +19,9 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img 
-            src="/assets/ndara-logo-black.png" 
+            src="/assets/Ndara-academy-logo-1.png" 
             alt="NDARA Academy Logo" 
-            className="h-16 w-auto"
+            className="h-12 sm:h-16 w-auto"
           />
         </Link>
 
@@ -82,46 +82,64 @@ const Navbar = () => {
             className="md:hidden p-2 text-gray-700"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            <svg
+            <img
+              src="/assets/hamburger.svg"
+              alt="Menu"
               className="w-8 h-8"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+            />
+          </button>
+
+        </div>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setIsMobileMenuOpen(false)} />
+      )}
+
+      {/* Mobile Menu Sidebar */}
+      <div className={`md:hidden fixed top-0 left-0 h-full w-3/4 bg-[#d8ff94] z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className="flex flex-col h-full">
+          {/* Header with Logo and Close Button */}
+          <div className="flex items-center justify-between p-6 border-b border-gray-300">
+            <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
+              <img 
+                src="/assets/Ndara-academy-logo-1.png" 
+                alt="NDARA Academy Logo" 
+                className="h-12 w-auto"
+              />
+            </Link>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-2 text-black"
             >
-              {isMobileMenuOpen ? (
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth={2}
                   d="M6 18L18 6M6 6l12 12"
                 />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              </svg>
+            </button>
+          </div>
 
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-[#fffff0] border-t border-gray-200">
-          <div className="px-6 py-4 space-y-4">
-                        {navigationLinks.map((link) => (
+          {/* Navigation Links */}
+          <div className="flex-1 px-6 py-8 space-y-6">
+            {navigationLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="block text-gray-700 hover:text-gray-900 transition-colors duration-200 font-medium"
+                className="block text-black hover:text-gray-700 transition-colors duration-200 font-bold text-lg"
                 style={{
                   fontFamily: 'Raleway',
-                  fontWeight: 500,
-                  fontSize: '16px',
+                  fontWeight: 700,
+                  fontSize: '18px',
                   lineHeight: '100%',
                   letterSpacing: '0%'
                 }}
@@ -130,28 +148,31 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+          </div>
+
+          {/* CTA Button */}
+          <div className="p-6">
             <button 
-              className="w-full font-medium text-gray-900 transition-colors duration-200"
+              className="w-full font-medium text-white transition-colors duration-200"
               style={{
                 fontFamily: 'Raleway',
                 fontWeight: 500,
                 fontSize: '16px',
                 lineHeight: '100%',
                 letterSpacing: '0%',
-                background: '#D7FF94',
+                background: '#000000',
                 width: '100%',
-                height: '39px',
-                padding: '10px 16px',
+                height: '48px',
+                padding: '12px 16px',
                 borderRadius: '8px',
-                borderLeft: '1px solid #D7FF94',
                 whiteSpace: 'nowrap'
               }}
             >
-              Join our Community
+              Register Now
             </button>
           </div>
         </div>
-      )}
+      </div>
     </nav>
   )
 }
