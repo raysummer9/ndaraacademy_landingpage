@@ -20,7 +20,7 @@ const MissionSection = () => {
           <div className="order-2 lg:order-2 lg:col-span-5 flex items-stretch animate-fade-in-up animation-delay-400">
             <div className="bg-[#D7FF94] rounded-2xl p-8 lg:p-10 relative w-full flex flex-col justify-between transition-all duration-300 hover:shadow-xl">
               {/* Mission Text */}
-              <p className="text-gray-900 animate-fade-in-up animation-delay-600 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[43px] leading-tight sm:leading-tight lg:leading-[52px] font-['Raleway'] font-medium" style={{
+              <p className="text-gray-900 animate-fade-in-up animation-delay-600 text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[43px] leading-tight sm:leading-tight lg:leading-[52px] font-['Raleway'] font-medium" style={{
                 letterSpacing: '0%'
               }}>
                 Our mission is to create programs, digital tools, and community spaces that help young people grow in design, in self-belief, and in purpose.
