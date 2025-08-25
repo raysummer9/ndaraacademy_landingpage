@@ -3,7 +3,7 @@ import React from 'react';
 const MissionSection = () => {
   return (
     <section className="pt-8 sm:pt-0 pb-3 sm:pb-12 bg-[#fffff0] relative overflow-visible">
-      <div className="max-w-6xl mx-auto px-3 sm:px-6 relative">
+      <div className="max-w-full mx-auto px-6 sm:px-6 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
           {/* Left Column - Image (60% width) */}
           <div className="order-1 lg:order-1 lg:col-span-7 flex items-stretch animate-fade-in-up animation-delay-200">
