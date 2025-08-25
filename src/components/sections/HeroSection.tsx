@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const HeroSection = () => {
   return (
-    <section className="min-h-[80vh] sm:min-h-screen flex items-center px-6 sm:px-6 pt-32 sm:pt-32 pb-4 sm:pb-0 bg-[#fffff0]">
-      <div className="max-w-full mx-auto">
+    <section className="min-h-[80vh] sm:min-h-screen flex items-center px-6 sm:px-6 pt-32 sm:pt-6 pb-4 sm:pb-6 bg-[#fffff0]">
+      <div className="max-w-7xl mx-auto w-full">
         {/* Main Heading */}
         <h1 
           className="text-gray-900 mb-6 sm:mb-8 max-w-full sm:max-w-6xl text-left animate-fade-in-up text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[60px] leading-tight sm:leading-tight lg:leading-[74px] font-['Raleway'] font-semibold mt-8 sm:mt-0"
