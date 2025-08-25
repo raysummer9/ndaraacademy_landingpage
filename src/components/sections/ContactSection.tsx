@@ -74,7 +74,7 @@ const ContactSection = () => {
               {/* Description */}
               <p className="text-xl sm:text-xl text-gray-600 mb-12 leading-relaxed font-['Raleway']">
                 Whether you're a young creative with questions, a brand looking to collaborate, 
-                or just curious about what we do — we're always open to a good conversation. 
+                or just curious about what we do, we're always open to a good conversation. 
                 Drop us a message, and someone from our team will be in touch soon.
               </p>
 

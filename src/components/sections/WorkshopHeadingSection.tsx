@@ -83,7 +83,7 @@ const WorkshopHeadingSection = () => {
             <div className="relative z-10">
               <p className="text-white text-4xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-medium leading-tight font-['Raleway'] text-left">
                 Design isn't just
-                how it looks —
+                how it looks,
                 it's how it listens,
                 learns, and
                 leaves a mark.

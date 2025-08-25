@@ -41,7 +41,7 @@ export default function CollaborationCTASection() {
             fontWeight: 600,
             letterSpacing: '0%'
           }}>
-            We're not just imagining a better creative world — we're building it. And we're doing it with the bold, the purposeful, and the impact-driven.
+            We're not just imagining a better creative world, we're building it. And we're doing it with the bold, the purposeful, and the impact-driven.
           </h2>
         </div>
 
@@ -53,7 +53,7 @@ export default function CollaborationCTASection() {
             letterSpacing: '0%'
           }}>
             If your mission aligns with empowering the next generation of designers, storytellers, and digital
-            thinkers — this is your call to action.
+            thinkers, this is your call to action.
           </p>
         </div>
 

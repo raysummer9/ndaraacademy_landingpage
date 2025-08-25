@@ -89,7 +89,7 @@ const CommunityTestimonialSection = () => {
                 }`}>
                   We design learning experiences that inspire you to create. Think bite-sized lessons, 
                   relatable voices, and real-world tools that speak your language. Whether you're just 
-                  exploring or ready to level up, our courses are built to grow with you—not overwhelm you.
+                  exploring or ready to level up, our courses are built to grow with you, not overwhelm you.
                 </p>
               </div>
             </div>

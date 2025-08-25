@@ -57,7 +57,7 @@ export default function AboutHeadingSection() {
             lineHeight: '1.5',
             letterSpacing: '0%'
           }}>
-            Ndara was born from a simple belief—every young creative deserves a space to grow, be seen, and belong. Our journey is rooted in nurturing talent, championing identity, and building a future where creativity becomes a tool for self-belief, not just skill.
+            Ndara was born from a simple belief: every young creative deserves a space to grow, be seen, and belong. Our journey is rooted in nurturing talent, championing identity, and building a future where creativity becomes a tool for self-belief, not just skill.
           </p>
         </div>
 

@@ -12,7 +12,7 @@ const faqItems: FAQItem[] = [
   {
     id: 1,
     question: "What exactly is Ndara Studios?",
-    answer: "Ndara is your creative village — a space where young people learn, grow, and connect through creativity, mentorship, and meaningful community experiences."
+    answer: "Ndara is your creative village, a space where young people learn, grow, and connect through creativity, mentorship, and meaningful community experiences."
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const faqItems: FAQItem[] = [
   {
     id: 6,
     question: "How much does it cost to be part of the community?",
-    answer: "The community is free to join. Some advanced sessions, workshops, or programs might have a small fee — but the goal is access, not barriers."
+    answer: "The community is free to join. Some advanced sessions, workshops, or programs might have a small fee, but the goal is access, not barriers."
   }
 ];
 

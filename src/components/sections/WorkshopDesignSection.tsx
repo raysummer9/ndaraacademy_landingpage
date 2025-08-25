@@ -43,9 +43,9 @@ const WorkshopDesignSection = () => {
           </h2>
           
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-['Raleway'] text-left">
-            At Ndara Studios, design is more than what you see — it's what you feel, question, and shape. 
+            At Ndara Studios, design is more than what you see, it's what you feel, question, and shape. 
             Learners are invited into a space where design becomes a way to express identity, solve real problems, 
-            and reimagine the world around them. It's about discovering the voice behind the visuals — and using it with purpose.
+            and reimagine the world around them. It's about discovering the voice behind the visuals and using it with purpose.
           </p>
         </div>
 
@@ -76,9 +76,9 @@ const WorkshopDesignSection = () => {
           </h2>
           
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-['Raleway'] text-left mb-12 sm:mb-16 lg:mb-20">
-            From the moment they start, learners don't just study design — they live it. Through hands-on challenges, 
+            From the moment they start, learners don't just study design they live it. Through hands-on challenges, 
             interactive feedback, and guided mentorship, each experience is crafted to spark curiosity, build confidence, 
-            and nurture creative flow. It's not about being perfect — it's about showing up, exploring boldly, and growing in real time.
+            and nurture creative flow. It's not about being perfect, it's about showing up, exploring boldly, and growing in real time.
           </p>
 
           {/* Creative Tools Image */}
@@ -107,7 +107,7 @@ const WorkshopDesignSection = () => {
           <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 leading-relaxed font-['Raleway'] text-left mb-12 sm:mb-16 lg:mb-20">
             Whether someone is just starting out, teaching themselves, or rediscovering their creative path, 
             Ndara's design track meets them where they are. It's built for young minds eager to design with feeling, 
-            build with clarity, and create with purpose. Everyone leaves with more than just skills — they leave with belief in what they can build.
+            build with clarity, and create with purpose. Everyone leaves with more than just skills, they leave with belief in what they can build.
           </p>
 
           {/* Team Meeting Image */}

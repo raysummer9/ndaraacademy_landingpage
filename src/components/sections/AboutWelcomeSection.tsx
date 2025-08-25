@@ -54,7 +54,7 @@ export default function AboutWelcomeSection() {
             lineHeight: '26px',
             letterSpacing: '0%'
           }}>
-            At Ndara, we're a team of dreamers, builders, and believers in young creative power. We don't just make things—we shape experiences that help people find their voice and grow with purpose. Every tool, course, or community space we create is rooted in empathy and designed to spark real transformation. This isn't about chasing trends—it's about rewriting the story, together.
+            At Ndara, we're a team of dreamers, builders, and believers in young creative power. We don't just make things, we shape experiences that help people find their voice and grow with purpose. Every tool, course, or community space we create is rooted in empathy and designed to spark real transformation. This isn't about chasing trends, it's about rewriting the story, together.
           </p>
         </div>
 

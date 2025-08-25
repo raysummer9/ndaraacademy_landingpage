@@ -15,7 +15,7 @@ const featureBlocks: FeatureBlock[] = [
   {
     id: 1,
     title: "Your space, your pace.",
-    description: "Soon, you'll be able to connect, team, and create from anywhere — all in one private creative hub.",
+    description: "Soon, you'll be able to connect, team, and create from anywhere, all in one private creative hub.",
     icon: "card1",
     isComingSoon: true
   },
@@ -28,7 +28,7 @@ const featureBlocks: FeatureBlock[] = [
   {
     id: 3,
     title: "Team up. Build big.",
-    description: "Work on real briefs, connect with fellow creatives, and bring your ideas to life—together.",
+    description: "Work on real briefs, connect with fellow creatives, and bring your ideas to life, together.",
     icon: "card3"
   },
   {
