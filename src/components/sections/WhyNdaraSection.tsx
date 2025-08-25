@@ -80,8 +80,8 @@ export default function WhyNdaraSection() {
         </div>
 
         {/* Main Heading */}
-        <div className={`text-left mb-12 sm:mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-semibold text-black leading-tight sm:leading-tight lg:leading-tight xl:leading-[62px] max-w-5xl font-['Raleway']">
+        <div className={`text-left mb-8 sm:mb-16 transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-[50px] font-semibold text-black leading-tight sm:leading-tight lg:leading-tight xl:leading-[62px] max-w-5xl font-['Raleway']">
             Millions of young creatives feel disconnected from the creative economy. We're here to change that.
           </h2>
         </div>
@@ -103,7 +103,7 @@ export default function WhyNdaraSection() {
               </div>
               
               {/* Feature Text */}
-              <p className="text-xl sm:text-lg lg:text-xl text-gray-800 leading-relaxed pt-0.5">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-800 leading-relaxed pt-0.5">
                 {feature.text}
               </p>
             </div>

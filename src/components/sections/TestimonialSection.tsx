@@ -109,9 +109,9 @@ export default function TestimonialSection() {
               </div>
 
               {/* Author Info and Navigation */}
-              <div className={`flex items-center justify-between transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+              <div className={`flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-6 sm:gap-4 transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
                 {/* Author Info */}
-                <div className="flex items-center gap-4">
+                <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
                   <div className="w-16 h-16 rounded-full bg-gray-300 overflow-hidden">
                     <img 
                       src={testimonials[currentTestimonial].avatar} 
