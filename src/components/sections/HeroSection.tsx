@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const HeroSection = () => {
   return (
-    <section className="min-h-[80vh] sm:min-h-screen flex items-center px-6 sm:px-6 pt-32 sm:pt-32 pb-8 sm:pb-0 bg-[#fffff0]">
+    <section className="min-h-[80vh] sm:min-h-screen flex items-center px-6 sm:px-6 pt-32 sm:pt-32 pb-4 sm:pb-0 bg-[#fffff0]">
       <div className="max-w-full mx-auto">
         {/* Main Heading */}
         <h1 
