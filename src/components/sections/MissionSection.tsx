@@ -2,7 +2,7 @@ import React from 'react';
 
 const MissionSection = () => {
   return (
-    <section className="pt-0 pb-3 sm:py-12 bg-[#fffff0] relative overflow-visible">
+    <section className="pt-0 pb-3 sm:pb-12 bg-[#fffff0] relative overflow-visible">
       <div className="max-w-6xl mx-auto px-3 sm:px-6 relative">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-stretch">
           {/* Left Column - Image (60% width) */}
