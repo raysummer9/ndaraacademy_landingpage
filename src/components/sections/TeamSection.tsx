@@ -7,35 +7,35 @@ const teamMembers = [
     id: 1,
     name: "FAITH OGUNDARE",
     role: "Founder & CEO",
-    image: "/images/team/faith-ogundare.jpg", // Placeholder - will be provided later
+    image: "/images/faith-ogundare.jpg",
     cardStyle: "border-green-200 shadow-green-100"
   },
   {
     id: 2,
     name: "DORCAS ETIM",
     role: "CPO",
-    image: "/images/team/dorcas-etim.jpg", // Placeholder - will be provided later
+    image: "/images/dorcas-etim.jpg",
     cardStyle: "border-pink-200 shadow-pink-100"
   },
   {
     id: 3,
     name: "PROMISE CHIME",
     role: "CTO",
-    image: "/images/team/promise-chime.jpg", // Placeholder - will be provided later
+    image: "/images/promise-chime.jpg",
     cardStyle: "border-gray-300 shadow-gray-100"
   },
   {
     id: 4,
     name: "ADEOLA BALOGUN",
     role: "Community Manager",
-    image: "/images/team/adeola-balogun.jpg", // Placeholder - will be provided later
+    image: "/images/adeola-balogun.jpg", 
     cardStyle: "border-blue-200 shadow-blue-100"
   },
   {
     id: 5,
     name: "KINGSLEY ABE",
     role: "Graphics Designer",
-    image: "/images/team/kingsley-abe.jpg", // Placeholder - will be provided later
+    image: "/images/kingsley-abe.jpg", 
     cardStyle: "border-purple-200 shadow-purple-100"
   },
   {
