@@ -7,14 +7,14 @@ const teamMembers = [
     id: 1,
     name: "FAITH OGUNDARE",
     role: "Founder & CEO",
-    image: "/images/faith-ogundare.jpg",
+    image: "/images/faith-ogundare.JPG",
     cardStyle: "border-green-200 shadow-green-100"
   },
   {
     id: 2,
     name: "DORCAS ETIM",
     role: "CPO",
-    image: "/images/dorcas-etim.jpg",
+    image: "/images/dorcas-etim.JPG",
     cardStyle: "border-pink-200 shadow-pink-100"
   },
   {
