@@ -1,11 +1,17 @@
+'use client';
+
 import HeroSection from '@/components/sections/HeroSection'
 import PillarsSection from '@/components/sections/PillarsSection'
 import WhyNdaraSection from '@/components/sections/WhyNdaraSection';
 import TestimonialsSection from '@/components/sections/TestimonialSection';
 import TeamSection from '@/components/sections/TeamSection';
 import CTASection from '@/components/sections/CTASection';
+import NewsletterModal from '@/components/NewsletterModal';
+import { useNewsletterModal } from '@/hooks/useNewsletterModal';
 
 export default function Home() {
+  const { isModalOpen, closeModal } = useNewsletterModal();
+
   return (
     <main className="relative">
       <HeroSection />
@@ -26,6 +32,9 @@ export default function Home() {
       <TestimonialsSection />
       <TeamSection />
       <CTASection />
+
+      {/* Newsletter Modal */}
+      <NewsletterModal isOpen={isModalOpen} onClose={closeModal} />
     </main>
   );
 }
