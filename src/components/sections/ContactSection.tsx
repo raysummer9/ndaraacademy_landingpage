@@ -53,16 +53,17 @@ const ContactSection = () => {
     try {
       console.log('Form data:', formData);
       
-      const response = await fetch('/api/contact', {
+      // For static hosting, we need to call Web3Forms directly
+      const formDataToSend = new FormData();
+      formDataToSend.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || '');
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('message', formData.message);
+      formDataToSend.append('subject', `New Contact Form Submission from ${formData.name}`);
+
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-        }),
+        body: formDataToSend,
       });
 
       console.log('Response status:', response.status);
