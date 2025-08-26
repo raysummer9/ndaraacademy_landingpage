@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,32 +54,30 @@ const ContactSection = () => {
     try {
       console.log('Form data:', formData);
       
-      // For static hosting, we need to call Web3Forms directly
-      const formDataToSend = new FormData();
-      formDataToSend.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || '');
-      formDataToSend.append('name', formData.name);
-      formDataToSend.append('email', formData.email);
-      formDataToSend.append('message', formData.message);
-      formDataToSend.append('subject', `New Contact Form Submission from ${formData.name}`);
+      // Use EmailJS for reliable email sending
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: 'info@ndarastudios.com', // Your email address
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+      );
 
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formDataToSend,
-      });
+      console.log('EmailJS result:', result);
 
-      console.log('Response status:', response.status);
-      const data = await response.json();
-      console.log('Response data:', data);
-
-      if (data.success) {
+      if (result.status === 200) {
         setIsSubmitted(true);
         setFormData({ name: '', email: '', message: '' });
       } else {
-        throw new Error(`Form submission failed: ${data.message || 'Unknown error'}`);
+        throw new Error('Failed to send email');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
-      alert(`There was an error submitting your message: ${error instanceof Error ? error.message : 'Unknown error'}. Please try again.`);
+      alert('There was an error submitting your message. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
