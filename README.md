@@ -66,6 +66,27 @@ The project is set up with:
 - Tailwind CSS for styling
 - Next.js App Router for modern React patterns
 
+## 🚀 Deployment
+
+### Next.js 15 Static Export Fix
+
+This project includes a fix for Next.js 15 static exports where the `routes-manifest.json` file is not automatically generated. The fix includes:
+
+1. **Automatic Manifest Generation**: A postbuild script (`scripts/generate-manifest.js`) that automatically creates the required `routes-manifest.json` file
+2. **Updated Build Process**: The `package.json` includes a `postbuild` script that runs after each build
+3. **Updated Configuration**: The `next.config.js` has been optimized for Next.js 15
+
+### Build Process
+
+```bash
+npm run build
+```
+
+This command will:
+1. Build the Next.js application
+2. Generate static files in the `out/` directory
+3. Automatically create the `routes-manifest.json` file
+
 ## 📱 Features
 
 - Responsive design

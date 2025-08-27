@@ -3,6 +3,15 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 
+/**
+ * NewsletterModal Component
+ * 
+ * Note: This component uses the contact form EmailJS template instead of a dedicated
+ * newsletter template to ensure that the name and email are properly included in the
+ * received emails. The contact form template is known to work correctly with the
+ * from_name and from_email variables.
+ */
+
 interface NewsletterModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -29,16 +38,18 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) =>
     setIsSubmitting(true);
 
     try {
+      console.log('Newsletter form data:', formData);
+      
       // Use EmailJS for newsletter subscription
+      // Using the contact form template to ensure name and email are properly included
       const result = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-        process.env.NEXT_PUBLIC_EMAILJS_NEWSLETTER_TEMPLATE_ID || '',
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
         {
           from_name: formData.name,
           from_email: formData.email,
-          message: 'Newsletter subscription request',
+          message: `Newsletter subscription request from ${formData.name} (${formData.email})`,
           to_email: 'admin@ndaraacademy.com',
-          subject: 'New Newsletter Subscription',
         },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
       );
