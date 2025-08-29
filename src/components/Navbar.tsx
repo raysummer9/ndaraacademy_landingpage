@@ -49,10 +49,8 @@ const Navbar = () => {
 
           {/* CTA Button - Desktop Only */}
           <div className="hidden xl:block">
-            <a 
-              href="/coming-soon"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link 
+              href="/join-our-community"
               className="font-medium text-black transition-colors duration-200"
               style={{
                 fontFamily: 'Raleway',
@@ -74,7 +72,7 @@ const Navbar = () => {
               }}
             >
               Join our Community
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -152,8 +150,9 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="p-6">
-            <button 
-              className="w-full font-medium text-white transition-colors duration-200"
+            <Link 
+              href="/join-our-community"
+              className="w-full font-medium text-white transition-colors duration-200 block text-center"
               style={{
                 fontFamily: 'Raleway',
                 fontWeight: 500,
@@ -165,11 +164,16 @@ const Navbar = () => {
                 height: '48px',
                 padding: '12px 16px',
                 borderRadius: '8px',
-                whiteSpace: 'nowrap'
+                whiteSpace: 'nowrap',
+                textDecoration: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
               }}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Register Now
-            </button>
+            </Link>
           </div>
         </div>
       </div>

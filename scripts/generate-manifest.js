@@ -33,6 +33,10 @@ const routesManifest = {
       "path": "/workshops",
       "query": {}
     },
+    "/join-our-community": {
+      "path": "/join-our-community",
+      "query": {}
+    },
     "/404": {
       "path": "/404",
       "query": {}
