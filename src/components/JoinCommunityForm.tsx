@@ -84,34 +84,34 @@ const JoinCommunityForm: React.FC = () => {
   }
 
   return (
-    <div className="max-w-6xl mx-auto p-16">
+    <div className="max-w-6xl mx-auto p-4 sm:p-8 md:p-12 lg:p-16">
       {/* Form Container */}
       <div className="bg-white rounded-3xl shadow-lg overflow-hidden relative min-h-[900px]">
         {/* Decorative Star Elements */}
-        <div className="absolute top-4 left-4 w-15 h-15 z-10">
+        <div className="absolute top-2 left-2 sm:top-4 sm:left-4 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-15 lg:h-15 z-10">
           <img src="/assets/star.svg" alt="Decorative star" className="w-full h-full" />
         </div>
-        <div className="absolute bottom-4 right-4 w-15 h-15 z-10 rotate-180">
+        <div className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-15 lg:h-15 z-10 rotate-180">
           <img src="/assets/star.svg" alt="Decorative star" className="w-full h-full" />
         </div>
 
         {/* Header Section */}
-        <div className="p-16 text-center">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6 font-['Raleway'] leading-tight">
+        <div className="p-6 sm:p-8 md:p-12 lg:p-16 text-center">
+          <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 font-['Raleway'] leading-tight">
             Join the Ndara community, learn, connect, grow.
           </h1>
           
-          <p className="text-gray-700 text-lg leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
             Fill in your details below to join our vibrant community on Discord & Telegram. We'd love to know you better!
           </p>
         </div>
 
         {/* Form Section */}
-        <div className="px-16 pb-16">
-          <form onSubmit={handleSubmit} className="space-y-10">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="px-6 sm:px-8 md:px-12 lg:px-16 pb-6 sm:pb-8 md:pb-12 lg:pb-16">
+          <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8 md:space-y-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10">
               {/* Left Column */}
-              <div className="space-y-8">
+              <div className="space-y-6 sm:space-y-8">
                 {/* Name Field */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-3">
@@ -164,7 +164,7 @@ const JoinCommunityForm: React.FC = () => {
               </div>
 
               {/* Right Column */}
-              <div className="space-y-8">
+              <div className="space-y-6 sm:space-y-8">
                 {/* Email Field */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-3">
@@ -219,7 +219,7 @@ const JoinCommunityForm: React.FC = () => {
             </div>
 
             {/* Submit Button */}
-            <div className="pt-12">
+            <div className="pt-6 sm:pt-8 md:pt-12">
               <button
                 type="submit"
                 disabled={isSubmitting}
