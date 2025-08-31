@@ -1,6 +1,7 @@
 import AboutHeadingSection from '@/components/sections/AboutHeadingSection';
 import AboutWelcomeSection from '@/components/sections/AboutWelcomeSection';
 import CommunityTestimonialSection from '@/components/sections/CommunityTestimonialSection';
+import TeamSection from '@/components/sections/TeamSection';
 import CTASection from '@/components/sections/CTASection';
 
 
@@ -12,7 +13,7 @@ export default function About() {
       <AboutHeadingSection />
       <AboutWelcomeSection />
       <CommunityTestimonialSection />
-
+      <TeamSection />
       <CTASection />
     </main>
   );

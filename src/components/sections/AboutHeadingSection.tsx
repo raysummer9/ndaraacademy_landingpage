@@ -43,7 +43,7 @@ export default function AboutHeadingSection() {
             lineHeight: '1.1',
             letterSpacing: '0%'
           }}>
-            Our Story: Where purpose<br className="hidden sm:block" />
+            Our Story: Where purpose <br className="hidden sm:block" />
             meets possibility
           </h1>
         </div>

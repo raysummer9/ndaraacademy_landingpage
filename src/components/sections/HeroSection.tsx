@@ -43,7 +43,7 @@ const HeroSection = () => {
             </Link>
             
             <Link 
-              href="/community"
+              href="/join-our-community"
               className="hidden sm:inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-transparent text-gray-900 font-semibold border-2 border-gray-900 rounded-lg hover:bg-gray-50 transition-all duration-300 group hover:shadow-lg"
             >
               Join Community
@@ -84,7 +84,7 @@ const HeroSection = () => {
               
               {/* CTA Link */}
               <a 
-                href="/community" 
+                href="/join-our-community" 
                 className="inline-flex items-center text-base lg:text-lg font-semibold text-gray-900 hover:text-gray-700 transition-all duration-300 group mt-12 mb-8 animate-fade-in-up animation-delay-800 hover:translate-x-2"
               >
                 Join Community

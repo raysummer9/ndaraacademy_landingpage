@@ -25,7 +25,7 @@ const CommunityTestimonialSection = () => {
     {
       id: 3,
       title: "Creative Community",
-      content: "This is where the magic happens. Inside our private space, you'll find people just like you—creators, learners, visionaries figuring things out together. We host challenges, share wins, and ask the messy questions. It's not just a network—it's a creative home.",
+      content: "This is where the magic happens. Inside our private space, you'll find people just like you, creators, learners, visionaries figuring things out together. We host challenges, share wins, and ask the messy questions. It's not just a network, it's a creative home.",
       smallImage: "/images/what-we-offer3.jpg",
       smallImageAlt: "Creative community collaboration"
     }
