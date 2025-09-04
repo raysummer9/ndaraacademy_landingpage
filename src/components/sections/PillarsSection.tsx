@@ -131,31 +131,7 @@ export default function PillarsSection() {
                   
                   {/* Content Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-xl font-bold text-white">{pillar.title}</h3>
-                      
-                      {/* Circular Action Button */}
-                      <a 
-                        href="/coming-soon"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-10 h-10 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors duration-300"
-                      >
-                        <svg 
-                          className="w-4 h-4 text-white" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          viewBox="0 0 24 24"
-                        >
-                          <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth={2} 
-                            d="M17 8l4 4m0 0l-4 4m4-4H3" 
-                          />
-                        </svg>
-                      </a>
-                    </div>
+                    <h3 className="text-xl font-bold text-white">{pillar.title}</h3>
                   </div>
                 </div>
               </div>
@@ -181,31 +157,7 @@ export default function PillarsSection() {
                   
                   {/* Content Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 bg-gradient-to-t from-black/80 to-transparent">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-xl sm:text-2xl font-bold text-white">{pillar.title}</h3>
-                      
-                      {/* Circular Action Button */}
-                      <a 
-                        href="/coming-soon"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-10 h-10 sm:w-12 sm:h-12 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors duration-300"
-                      >
-                        <svg 
-                          className="w-4 sm:w-5 h-4 sm:h-5 text-white" 
-                          fill="none" 
-                          stroke="currentColor" 
-                          viewBox="0 0 24 24"
-                        >
-                          <path 
-                            strokeLinecap="round" 
-                            strokeLinejoin="round" 
-                            strokeWidth={2} 
-                            d="M17 8l4 4m0 0l-4 4m4-4H3" 
-                          />
-                        </svg>
-                      </a>
-                    </div>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white">{pillar.title}</h3>
                   </div>
                 </div>
               </div>
