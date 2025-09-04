@@ -40,9 +40,8 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) =>
     try {
       console.log('Newsletter form data:', formData);
       
-      // Use EmailJS for newsletter subscription
-      // Using the contact form template to ensure name and email are properly included
-      const result = await emailjs.send(
+      // First, send notification to admin
+      const adminResult = await emailjs.send(
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
         {
@@ -54,9 +53,24 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) =>
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
       );
 
-      console.log('EmailJS result:', result);
+      console.log('Admin notification result:', adminResult);
 
-      if (result.status === 200) {
+      // Then, send confirmation email to subscriber
+      const subscriberResult = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+        {
+          from_name: 'Ndara Academy',
+          from_email: 'noreply@ndaraacademy.com',
+          message: `Thank you for subscribing to The Modern Creative Newsletter! We're excited to have you join our community of creators and learners. Follow us on LinkedIn for even more insights and updates.`,
+          to_email: formData.email,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+      );
+
+      console.log('Subscriber confirmation result:', subscriberResult);
+
+      if (adminResult.status === 200 && subscriberResult.status === 200) {
         setIsSubmitted(true);
         setFormData({ name: '', email: '' });
         
@@ -66,7 +80,7 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) =>
           setIsSubmitted(false);
         }, 2000);
       } else {
-        throw new Error('Failed to send email');
+        throw new Error('Failed to send emails');
       }
       
     } catch (error) {
