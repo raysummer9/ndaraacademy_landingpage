@@ -83,31 +83,6 @@ export default function PillarsSection() {
               pillars.
             </h2>
           </div>
-          
-          {/* CTA Button */}
-          <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-            <a 
-              href="/coming-soon"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-[#D7FF94] text-black px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg"
-            >
-              All Projects
-              <svg 
-                className="w-4 sm:w-5 h-4 sm:h-5 transform group-hover:translate-x-1 transition-transform duration-200" 
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M17 8l4 4m0 0l-4 4m4-4H3" 
-                />
-              </svg>
-            </a>
-          </div>
         </div>
 
         {/* Pillars Grid */}

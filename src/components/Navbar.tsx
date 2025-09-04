@@ -19,9 +19,9 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <img 
-            src="/assets/Ndara-academy-logo-1.png" 
+            src="/assets/ndara-academy-logo-blue.png" 
             alt="NDARA Academy Logo" 
-            className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
+            className="w-[150px] h-12"
           />
         </Link>
 
