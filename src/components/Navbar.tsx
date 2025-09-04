@@ -21,14 +21,14 @@ const Navbar = () => {
           <img 
             src="/assets/Ndara-academy-logo-1.png" 
             alt="NDARA Academy Logo" 
-            className="h-12 sm:h-16 w-auto"
+            className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
           />
         </Link>
 
         {/* Right side: Navigation + Button */}
         <div className="flex items-center space-x-8">
           {/* Desktop Navigation - Right aligned */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden xl:flex items-center space-x-8">
             {navigationLinks.map((link) => (
               <Link
                 key={link.name}
@@ -77,7 +77,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-gray-700"
+            className="xl:hidden p-2 text-gray-700"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             <img
@@ -92,11 +92,11 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setIsMobileMenuOpen(false)} />
+        <div className="xl:hidden fixed inset-0 bg-black bg-opacity-50 z-40" onClick={() => setIsMobileMenuOpen(false)} />
       )}
 
       {/* Mobile Menu Sidebar */}
-      <div className={`md:hidden fixed top-0 left-0 h-full w-3/4 bg-[#d8ff94] z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`xl:hidden fixed top-0 left-0 h-full w-3/4 bg-[#d8ff94] z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="flex flex-col h-full">
           {/* Header with Logo and Close Button */}
           <div className="flex items-center justify-between p-6 border-b border-gray-300">
