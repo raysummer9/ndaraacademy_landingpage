@@ -42,7 +42,7 @@ const teamMembers = [
     id: 6,
     name: "ADEOLA TAIWO",
     role: "Content Manager",
-    image: "/images/adeola-taiwo.jpg", 
+    image: "/images/adeola-taiwo.jpeg", 
     cardStyle: "border-orange-200 shadow-orange-100"
   }
 ];

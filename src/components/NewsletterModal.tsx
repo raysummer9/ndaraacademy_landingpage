@@ -165,7 +165,7 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) =>
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-black text-[#D7FF94] font-bold py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-[#1a237e] text-white font-bold py-3 px-6 rounded-lg hover:bg-[#283593] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? 'Subscribing...' : 'Subscribe'}
                 </button>

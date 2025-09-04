@@ -223,7 +223,7 @@ const JoinCommunityForm: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#D7FF94] text-gray-900 font-bold py-4 px-8 rounded-lg hover:bg-[#C7EF84] transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg shadow-sm"
+                className="w-full bg-[#1a237e] text-white font-bold py-4 px-8 rounded-lg hover:bg-[#283593] transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-lg shadow-sm"
               >
                 {isSubmitting ? 'Registering...' : 'Register & Connect'}
               </button>

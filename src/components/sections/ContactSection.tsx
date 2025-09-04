@@ -210,7 +210,7 @@ const ContactSection = () => {
                       </p>
                       <button
                         onClick={() => setIsSubmitted(false)}
-                        className="bg-[#D7FF94] text-black font-medium py-3 px-6 rounded-lg hover:bg-[#D7FF94]/80 transition-colors duration-200 font-['Raleway']"
+                        className="bg-[#1a237e] text-white font-medium py-3 px-6 rounded-lg hover:bg-[#283593] transition-colors duration-200 font-['Raleway']"
                       >
                         Send Another Message
                       </button>
@@ -259,7 +259,7 @@ const ContactSection = () => {
                         <button
                           type="submit"
                           disabled={isSubmitting}
-                          className="w-full bg-[#D7FF94] text-black font-medium py-3 px-6 rounded-lg hover:bg-[#D7FF94]/80 transition-colors duration-200 font-['Raleway'] disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                          className="w-full bg-[#1a237e] text-white font-medium py-3 px-6 rounded-lg hover:bg-[#283593] transition-colors duration-200 font-['Raleway'] disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
                         >
                           {isSubmitting ? (
                             <>

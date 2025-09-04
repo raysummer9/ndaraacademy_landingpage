@@ -51,19 +51,19 @@ const Navbar = () => {
           <div className="hidden xl:block">
             <Link 
               href="/join-our-community"
-              className="font-medium text-black transition-colors duration-200"
+              className="font-medium text-white transition-colors duration-200"
               style={{
                 fontFamily: 'Raleway',
                 fontWeight: 500,
                 fontSize: '16px',
                 lineHeight: '100%',
                 letterSpacing: '0%',
-                background: '#D7FF94',
+                background: '#1a237e',
                 width: '191px',
                 height: '39px',
                 padding: '10px 16px',
                 borderRadius: '8px',
-                borderLeft: '1px solid #D7FF94',
+                borderLeft: '1px solid #1a237e',
                 whiteSpace: 'nowrap',
                 textDecoration: 'none',
                 display: 'flex',
@@ -96,7 +96,7 @@ const Navbar = () => {
       )}
 
       {/* Mobile Menu Sidebar */}
-      <div className={`xl:hidden fixed top-0 left-0 h-full w-3/4 bg-[#d8ff94] z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+      <div className={`xl:hidden fixed top-0 left-0 h-full w-3/4 bg-[#D7FF94] z-50 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <div className="flex flex-col h-full">
           {/* Header with Logo and Close Button */}
           <div className="flex items-center justify-between p-6 border-b border-gray-300">

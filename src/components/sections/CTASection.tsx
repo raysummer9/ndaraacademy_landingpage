@@ -55,9 +55,9 @@ export default function CTASection() {
               href="/join-our-community"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#D7FF94] text-black px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#c4f085] transition-all duration-300 hover:shadow-lg inline-flex items-center justify-center w-fit"
+              className="bg-[#1a237e] text-white px-8 sm:px-10 py-3 sm:py-4 rounded-lg font-semibold hover:bg-[#283593] transition-all duration-300 hover:shadow-lg inline-flex items-center justify-center w-fit"
             >
-              Join the Community
+              Join our Community
             </a>
             <a 
               href="/contact"

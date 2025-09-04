@@ -62,7 +62,7 @@ export default function CollaborationHeadingSection() {
 
             {/* Call-to-Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 transition-all duration-1000 delay-600">
-              <Link href="/contact" className="inline-flex items-center justify-center px-8 sm:px-10 py-3 sm:py-4 bg-[#D7FF94] text-black font-semibold rounded-lg hover:bg-[#c4f085] transition-all duration-300 group hover:shadow-lg">
+              <Link href="/contact" className="inline-flex items-center justify-center px-8 sm:px-10 py-3 sm:py-4 bg-[#1a237e] text-white font-semibold rounded-lg hover:bg-[#283593] transition-all duration-300 group hover:shadow-lg">
                 Become a Partner
                 <svg 
                   className="ml-2 w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-200" 

@@ -86,8 +86,8 @@ export default function FAQSection() {
         <div className={`flex flex-col lg:flex-row lg:justify-between lg:items-start mb-12 sm:mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {/* Left - Question Label */}
           <div className="mb-8 lg:mb-0">
-            <div className="inline-flex items-center gap-2 bg-black text-[#D7FF94] px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-[#D7FF94]">
-              <div className="w-2 h-2 bg-[#D7FF94] rounded-full"></div>
+            <div className="inline-flex items-center gap-2 bg-black text-[#1a237e] px-4 sm:px-6 py-2 sm:py-3 rounded-full border border-[#1a237e]">
+              <div className="w-2 h-2 bg-[#1a237e] rounded-full"></div>
               <span className="text-xs sm:text-sm font-semibold tracking-wide">GOT QUESTIONS?</span>
             </div>
           </div>
@@ -122,8 +122,8 @@ export default function FAQSection() {
                     </h3>
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
                       openItems.includes(item.id) 
-                        ? 'bg-[#D7FF94] text-gray-800' 
-                        : 'bg-black text-[#D7FF94]'
+                        ? 'bg-[#1a237e] text-white' 
+                        : 'bg-black text-[#1a237e]'
                     }`}>
                       <svg 
                         className={`w-4 h-4 transition-transform duration-300 ${
@@ -169,8 +169,8 @@ export default function FAQSection() {
                     </h3>
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
                       openItems.includes(item.id) 
-                        ? 'bg-[#D7FF94] text-gray-800' 
-                        : 'bg-black text-[#D7FF94]'
+                        ? 'bg-[#1a237e] text-white' 
+                        : 'bg-black text-[#1a237e]'
                     }`}>
                       <svg 
                         className={`w-4 h-4 transition-transform duration-300 ${
