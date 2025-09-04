@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import emailjs from '@emailjs/browser';
 
 /**
  * NewsletterModal Component
@@ -17,21 +16,25 @@ interface NewsletterModalProps {
   onClose: () => void;
 }
 
+interface FormData {
+  name: string;
+  email: string;
+}
+
 const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: ''
-  });
+  const [formData, setFormData] = useState<FormData>({ name: '', email: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  useEffect(() => {
+    if (isOpen) {
+      const timer = setTimeout(() => {
+        onClose();
+      }, 10000); // 10 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [isOpen, onClose]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,37 +43,21 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) =>
     try {
       console.log('Newsletter form data:', formData);
       
-      // First, send notification to admin
-      const adminResult = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: `Newsletter subscription request from ${formData.name} (${formData.email})`,
-          to_email: 'admin@ndaraacademy.com',
+      // Send email using PHP endpoint
+      const response = await fetch('/api/send-email.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
-      );
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+        }),
+      });
 
-      console.log('Admin notification result:', adminResult);
+      const result = await response.json();
 
-      // Then, send confirmation email to subscriber
-      const subscriberResult = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
-        {
-          from_name: 'Ndara Academy',
-          from_email: 'noreply@ndaraacademy.com',
-          message: `Thank you for subscribing to The Modern Creative Newsletter! We're excited to have you join our community of creators and learners. Follow us on LinkedIn for even more insights and updates.`,
-          to_email: formData.email,
-        },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
-      );
-
-      console.log('Subscriber confirmation result:', subscriberResult);
-
-      if (adminResult.status === 200 && subscriberResult.status === 200) {
+      if (response.ok && result.success) {
         setIsSubmitted(true);
         setFormData({ name: '', email: '' });
         
@@ -80,7 +67,7 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) =>
           setIsSubmitted(false);
         }, 2000);
       } else {
-        throw new Error('Failed to send emails');
+        throw new Error(result.error || 'Failed to subscribe');
       }
       
     } catch (error) {
@@ -156,7 +143,7 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) =>
                     type="text"
                     name="name"
                     value={formData.name}
-                    onChange={handleInputChange}
+                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                     placeholder="Name"
                     required
                     className="w-full px-5 py-4 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-gray-900"
@@ -168,7 +155,7 @@ const NewsletterModal: React.FC<NewsletterModalProps> = ({ isOpen, onClose }) =>
                     type="email"
                     name="email"
                     value={formData.email}
-                    onChange={handleInputChange}
+                    onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                     placeholder="Email address"
                     required
                     className="w-full px-5 py-4 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all text-gray-900"

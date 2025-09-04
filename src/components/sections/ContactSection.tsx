@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -54,26 +53,26 @@ const ContactSection = () => {
     try {
       console.log('Form data:', formData);
       
-      // Use EmailJS for reliable email sending
-      const result = await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-          to_email: 'info@ndarastudios.com', // Your email address
+      // Use PHP endpoint for email sending
+      const response = await fetch('/api/contact.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
-      );
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
 
-      console.log('EmailJS result:', result);
+      const result = await response.json();
 
-      if (result.status === 200) {
+      if (response.ok && result.success) {
         setIsSubmitted(true);
         setFormData({ name: '', email: '', message: '' });
       } else {
-        throw new Error('Failed to send email');
+        throw new Error(result.error || 'Failed to send message');
       }
     } catch (error) {
       console.error('Error submitting form:', error);
