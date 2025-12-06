@@ -61,3 +61,15 @@ if (!fs.existsSync(outDir)) {
 // Write the manifest file
 fs.writeFileSync(manifestPath, JSON.stringify(routesManifest, null, 2));
 console.log('✅ Generated routes-manifest.json');
+
+// Restore jsx: "preserve" in tsconfig.json for static exports
+// Next.js 16 auto-configures jsx to "react-jsx", but for static exports, "preserve" is required
+const tsconfigPath = path.join(__dirname, '..', 'tsconfig.json');
+if (fs.existsSync(tsconfigPath)) {
+  const tsconfig = JSON.parse(fs.readFileSync(tsconfigPath, 'utf8'));
+  if (tsconfig.compilerOptions && tsconfig.compilerOptions.jsx !== 'preserve') {
+    tsconfig.compilerOptions.jsx = 'preserve';
+    fs.writeFileSync(tsconfigPath, JSON.stringify(tsconfig, null, 2));
+    console.log('✅ Restored jsx: "preserve" in tsconfig.json for static exports');
+  }
+}
